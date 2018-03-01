@@ -20,12 +20,8 @@ export class ProdutoComponent implements OnInit {
   ) {
 
     this.produtoService.getProdutos()
-      .then(result => {
-        this.produtos = result;
-      })
-      .catch( error => {
-        console.log(' ----- ERROR ----- '+ error.message);
-      });
+      .then(result => this.produtos = result)
+      .catch( error => console.log(' ----- ERROR ----- '+ error.message));
 
    }
 

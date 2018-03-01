@@ -11,65 +11,153 @@
   </div>
 </div>
 <!-- Menu -->
-<div class="container menu">
-  <div class="row">
-    <div class="col-sm-9">
-      <div class="menu-horizontal">
-          <ul class="nav">
-            <li class="nav-item col-sm-3">
-                <a class="nav-link home" href="index.html" >Home</a>
+<div class="container">
+  
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item col-sm-3">
-                  <a class="nav-link tabela"href="tabela.html" >tabela</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tabela</a>
               </li>
-              <li class="nav-item col-sm-3">
-                  <a class="nav-link formulario"href="formulario.html" >Formulario</a>
+              <li class="nav-item">
+                <a class="nav-link " href="#">Formulario</a>
               </li>
             </ul>
-      </div>
-    </div>
-  <div class="col-3">
-    <div class="menu-horizontal" style="margin-right: 1%;">
-        <ul >
-            <li  class="nav-item col-sm-3"><a class="nav-link link1" href="http://www.google.com" target="_blank">Link 1</a> </li>                
-        </ul>
-     </div>  
-  </div>
-</div>
+            <form class="form-inline my-2 my-lg-0">
+               <a class="nav-link" href="#">Pesquisa</a>
+            </form>
+          </div>
+        </nav>
+  
 </div>
 <!-- End Menu -->
-<!-- Conteudo -->
+
+<!-- Menu Vertical-->
 <div class="container" id="conteudo-fullscreen">
-  <div class="menu-vertical bg-cinza-claro conteudo-fullscreen">
-      <ul>
-          <li><a href="http://www.google.com" target="_blank">Link 1</a> </li>
-          <li><a href="http://www.google.com" target="_blank">Link 2</a> </li>
-          <li><a href="http://www.google.com" target="_blank">Link 3</a> </li>
-      </ul>        
+  <div class="row">
+    <div class="col-3">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+    </div>
+    <div class="col-9">
+        <!-- Formulario -->
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-4 mb-3">
+              <label for="validationTooltip01">Primeiro nome</label>
+              <input type="text" class="form-control" id="validationTooltip01" placeholder="Primeiro nome" required>
+              <div class="valid-tooltip">
+                Parece bom!
+              </div>
+            </div>
+            <div class="col-4 mb-3">
+              <label for="validationTooltip02">Segundo nome</label>
+              <input type="text" class="form-control" id="validationTooltip02" placeholder="Segundo nome" required>
+              <div class="valid-tooltip">
+                Parece bom!
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationTooltipUsername">Username</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                </div>
+                <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Username" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Porfavor digite um username valido.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="validationTooltip03">Cidade</label>
+              <input type="text" class="form-control" id="validationTooltip03" placeholder="Cidade" required>
+              <div class="invalid-tooltip">
+                Por favor digite uma cidade valida.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip04">Logradouro</label>
+              <input type="text" class="form-control" id="validationTooltip04" placeholder="Logradouro" required>
+              <div class="invalid-tooltip">
+                Por favor digite um endereco valido.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="validationTooltip05">CEP</label>
+              <input type="text" class="form-control" id="validationTooltip05" placeholder="CEP" required>
+              <div class="invalid-tooltip">
+                Por favor digite um CEP valido.
+              </div>
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Salvar</button>
+        </form>
+        
+        <!-- Tabela -->
+        <table class="table table-hover ">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Idade</th>
+              <th scope="col">Sexo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>23</td>
+              <td>Masculino</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>19</td>
+              <td>Masculino</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>23</td>
+              <td>Feminino</td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
   </div>
-  <div class="main2">
-      
-      <h1 class="destaque">Mussum Ipsum</h1>
-      <p>
-          Mussum Ipsum, cacilds vidis litro abertis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. Sed non consequat odio. Sapien in monti palavris qui num significa nadis i pareci latim. Leite de capivaris, leite de mula manquis sem cabeça. Copo furadis é disculpa de bebadis, arcu quam euismod magna.
-          
-          Casamentiss faiz malandris se pirulitá. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Praesent vel viverra nisi. Mauris aliquet nunc non turpis scelerisque, eget. Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
-          
-          Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis! Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum. Paisis, filhis, espiritis santis. Suco de cevadiss deixa as pessoas mais interessantis.
-          
-          Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Quem manda na minha terra sou euzis! Mais vale um bebadis conhecidiss, que um alcoolatra anonimis. Detraxit consequat et quo num tendi nada.
-          
-          Não sou faixa preta cumpadi, sou preto inteiris, inteiris. A ordem dos tratores não altera o pão duris. Posuere libero varius. Nullam a nisl ut ante blandit hendrerit. Aenean sit amet nisi. Atirei o pau no gatis, per gatis num morreus. 
-          
-      </p>
+  <!-- End Menu-->
+  
+  <!-- Conteudo -->
+  
+  
   </div>
-</div>
-<!-- End Conteúdo -->
-<!-- Rodape -->
-<div>
-  <p ><b><i> 2018 - Todos direitos reservados</i></b></p>
-</div>
-
-
-
-
+  <!-- End Conteúdo -->
+  <!-- Rodape -->
+  <div class="container text-center bg-dark">
+    <p style="color: white"><b><i> 2018 - Todos direitos reservados</i></b></p>
+  </div>
+  
+  
+  
+  
+  
+  
