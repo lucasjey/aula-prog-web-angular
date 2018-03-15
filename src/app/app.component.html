@@ -1,74 +1,50 @@
-<!-- Topo -->
-<div class="container">
-  <div class="row">
-    <div class="col-6">
-      <img id="logo" src="assets/logo.png" alt="Logo Icarly" />
+  <!-- TOPO -->
+  <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <img id="logo" src="assets/logo.png" alt="Logomarca muito louca.">
+        </div>
+        <div class="col-6">
+            <p class="destaque">THE WORLD'S LARGEST WEB DEVELOPER SITE</p>    
+        </div>
     </div>
-    <div class="col-6">
-      <h1 class="destaque">Icarly</h1>
-    </div>
-  </div>
 </div>
-<!-- Menu -->
-<div class="container">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-dark bg-dark">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['category/list']">Tabela</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link " [routerLink]="['category/form']">Formulario</a>
-        </li>
-      </ul>
-      <ul class="form-inline my-2 my-lg-0 nav-item">
-        <a class="nav-link" style="color: rgb(175, 168, 168)" href="#">Sobre</a>
-      </ul>
-    </div>
-  </nav>
-
-</div>
-<!-- End Menu -->
-
-<!-- Menu Vertical-->
-
-<div class="container" id="conteudo-fullscreen">
-  <div class="row">
-    <nav class="navbar ">
-        <div id="list-example" class="list-group ">
-          <div class="mt-2">
-            <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="list-group-item list-group-item-action" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="list-group-item list-group-item-action" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="list-group-item list-group-item-action" href="#">Link</a>
-              </li>
+<!-- MENU -->
+<div class="container bg-verde-musgo">
+    <div class="row">
+        <div class="col-8">
+            <ul>
+                <li><a [routerLink]="['category/list']">TABELA com git</a></li>
+                <li><a href="http:www.google.com">Link 1</a></li>
+                <li><a href="http:www.google.com">Link 1</a></li>
             </ul>
-          </div>
         </div>
-    </nav>
-        <div class="col-10">
-          <div class="mt-5 ml-2">
-            <router-outlet></router-outlet>
-          </div>
+        <div class="col-4">
+            <ul>
+                <li><a href="http:www.google.com">Link 1</a></li>
+            </ul>
         </div>
-  </div>
+    </div>
 </div>
-  <!-- Rodape -->
+
+<!-- CONTEUDO -->
 <div class="container">
-  <div class="text-center bg-dark">
-    <p style="color: white">
-      <b>
-        <i> 2018 - Todos direitos reservados</i>
-      </b>
-    </p>
-  </div>
+    <div>
+        <ul>
+            <li><a href="http:www.google.com">Link 1</a></li>
+            <li><a href="http:www.google.com">Link 1</a></li>
+            <li><a href="http:www.google.com">Link 1</a></li>
+        </ul> 
+    </div>
+    <div>
+        
+        <router-outlet></router-outlet>
+
+    </div>
+</div>
+
+<!-- RODAPE -->
+<div>
+    <p><i>2018 - Todos direitos reservados</i></p>
 </div>
