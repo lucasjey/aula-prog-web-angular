@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CategoryListCompoment } from './category-list/category-list.component';
 import { CategoryFormCompoment } from './category-form/category-form.component';
+import { CategoryViewCompoment } from './category-view/category-view.component';
 
 //routing 
 import {CategoryRouting} from './category-routing.module';
@@ -18,7 +19,8 @@ import {CategoryService} from './category.service';
     declarations: [
         //Componentes
         CategoryListCompoment,
-        CategoryFormCompoment
+        CategoryFormCompoment,
+        CategoryViewCompoment
 
     ],
     imports: [
