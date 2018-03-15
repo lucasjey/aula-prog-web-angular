@@ -12,24 +12,22 @@
 <!-- Menu -->
 <div class="container">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-
+  <nav class="navbar navbar-expand-lg navbar-light bg-light  navbar-dark bg-dark">
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/category">Tabela</a>
+          <a class="nav-link" [routerLink]="['category/list']">Tabela</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link " href="#">Formulario</a>
+          <a class="nav-link " [routerLink]="['category/form']">Formulario</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <a class="nav-link" href="#">Pesquisa</a>
-      </form>
+      <ul class="form-inline my-2 my-lg-0 nav-item">
+        <a class="nav-link" style="color: rgb(175, 168, 168)" href="#">Sobre</a>
+      </ul>
     </div>
   </nav>
 
@@ -37,31 +35,40 @@
 <!-- End Menu -->
 
 <!-- Menu Vertical-->
+
 <div class="container" id="conteudo-fullscreen">
   <div class="row">
-    <div class="col-3">
-      <ul class="nav flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <router-outlet></router-outlet>
-    </div>
+    <nav class="navbar ">
+        <div id="list-example" class="list-group ">
+          <div class="mt-2">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="list-group-item list-group-item-action" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+        <div class="col-10">
+          <div class="mt-5 ml-2">
+            <router-outlet></router-outlet>
+          </div>
+        </div>
   </div>
 </div>
-<!-- Rodape -->
-<div class="container text-center bg-dark">
-  <p style="color: white">
-    <b>
-      <i> 2018 - Todos direitos reservados</i>
-    </b>
-  </p>
+  <!-- Rodape -->
+<div class="container">
+  <div class="text-center bg-dark">
+    <p style="color: white">
+      <b>
+        <i> 2018 - Todos direitos reservados</i>
+      </b>
+    </p>
+  </div>
 </div>
